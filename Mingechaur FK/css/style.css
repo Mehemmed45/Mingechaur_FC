@@ -1,0 +1,825 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: dodgerblue;
+}
+
+header{
+    width: 80%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header .head-box{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-links{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.contact-links .social-box{
+    width: 20%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+}
+.social-box i{
+    cursor: pointer;
+}
+.social-box i:hover{
+    color: dodgerblue;
+}
+.contact-links .search-box{
+    width: 20%;
+    height: 25px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    margin-right: 20px;
+    border-bottom: 1px solid white;
+}
+
+.contact-links .search-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding-left: 10px;
+    background: transparent;
+    color: white;
+}
+.search-box i{
+    cursor: pointer;
+}
+
+.search-box input::placeholder{
+    color: rgb(119, 112, 112);
+}
+
+.logo-box{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(21, 21, 100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.logo-box img{
+    width: 300px;
+    height: 250px;
+}
+.logo-box span{
+    font-size: 30px;
+    color: white;
+}
+
+
+header nav{
+    width: 100%;
+    height: 60px;
+}
+nav .nav-icon{
+    width: 100%;
+    height: 50px;
+    background-color: dodgerblue;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+}
+nav .nav-icon li{
+    width: calc(100%);
+    height: 30px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-icon li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.nav-icon li:hover{
+    background-color: rgb(21, 21, 100);
+
+}
+
+.latest-news{
+    width: 80%;
+    height: auto;
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.news-box{
+    width: 40%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.news-img{
+    width: 100%;
+    height:160px;
+    overflow: hidden;
+    
+}
+.news-img img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.news-img img:hover{
+    transform: scale(1.05);
+}
+
+.news-content{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(21, 21, 100);
+    color: white;
+    padding: 0 5px 2px 5px;
+    text-align: center;
+}
+
+.shop{
+    width: 80%;
+    height: 300px;
+    background-color: rgb(21, 21, 100);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.shop .shop-textbox{
+    width: 30%;
+    height: 280px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid white;
+}
+.shop .home-shirt{
+    width: 30%;
+    height: 280px;
+    background-color: transparent;
+    text-align: center;
+    border-right: 1px solid white;
+}
+.shop .away-shirt{
+    width: 30%;
+    height: 280px;
+    background-color: transparent;
+    text-align: center;
+}
+.shop img{
+    width: 100%;
+    height: 270px;
+}
+
+.shop h2{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    font-style: italic;
+}
+.shop h4{
+    font-size: 20px;
+    color:  white;
+    font-style: italic;
+}
+
+.fixtures{
+    width: 80%;
+    height: 350px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fixture-textbox{
+    width: 80%;
+    height: 60px;
+    background-color: antiquewhite;
+    text-align: center;
+    padding-top: 10px;
+}
+.fixture-textbox h1{
+    color: rgb(21, 21, 100);
+    border: 5px solid rgb(21, 21, 100);
+    border-radius: 20px;
+}
+.match-box{
+    width: 40%;
+    height: 240px;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+}
+.match-textbox{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(21, 21, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.match-textbox h4{
+    color: white;
+    font-size: 20px;
+}
+.result-box{
+    width: 100%;
+    height:200px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+.home-club1{
+    width: 30%;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-club1 img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.away-club1{
+    width: 30%;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.away-club1 img{
+    width:120px;
+    height: 100px;
+}
+.result-box h1{
+    font-size: 12px;
+    color: white;    
+}
+.result{
+    width: 30%;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.result span{
+    font-size: 30px;
+    color: rgb(21, 21, 100);
+    text-align: center;
+    font-weight: bold;
+}
+.result h4{
+    color: rgb(21, 21, 100);
+    font-size: 12px;
+}
+.home-club2{
+    width: 30%;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.home-club2 img{
+    width:120px;
+    height: 100px;
+}
+.away-club2{
+    width: 30%;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.away-club2 img{
+    width: 80px;
+    height: 80px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(21, 21, 100);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+footer h2{
+    color: rgb(21, 21, 100);
+    font-size: 20px;
+    border-bottom: 1px solid rgb(21, 21, 100);
+    cursor: pointer;
+}
+.follow-box{
+    width: 30%;
+    height: 150px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.social-box2{
+    width: 180px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    color: rgb(100, 78, 78);
+}
+.social-box2 i{
+    font-size: 25px;
+}
+.social-box2 i:hover{
+    color: dodgerblue;
+}
+.sponsor-box{
+    width: 30%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.sponsor-box .sponsor-img{
+    width: 80%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.sponsor-box img{
+    width: 100px;
+    height: 40px;
+}
+
+.end-box{
+    width: 30%;
+    height: 150px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding-top: 5px;
+}
+.location-box{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+}
+.location-box iframe{
+    width: 100%;
+    height: inherit;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:880px){
+    .result-box h1{
+        font-size: 8px;
+        color: white;    
+    }
+    .home-club1 img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .home-club2 img{
+        width:100px;
+        height: 80px;
+    }
+    .away-club1 img{
+        width:100px;
+        height: 80px;
+    }
+    .away-club2 img{
+        width: 60px;
+        height: 60px;
+    }
+    .result span{
+        font-size:20px;
+    }
+    nav .nav-icon li a{
+        width: 100%;
+        font-size: 12px;
+    }
+    .news-content span{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+nav label, nav input{
+    display: none;
+}
+
+@media only screen and (max-width:650px){
+    header{
+        width: 80%;
+        height: 250px;
+    }
+    header .head-box{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .contact-links .social-box{
+        width: 25%;
+        font-size: 15px;
+        height: 30px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .contact-links .search-box{
+        width: 30%;
+        height: 30px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        color: white;
+        margin-right: 20px;
+        border-bottom: none;
+    }
+    .search-box input{
+        display: none;
+    }
+    .search-box i{
+        margin-left: 120px;
+    }
+    .logo-box{
+        height: 300px;
+    }
+    .logo-box img{
+        width: 40%;
+        height: 150px;
+    }
+    .logo-box span{
+        font-size: 20px;
+    }
+ 
+    header nav .nav-icon{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-around;
+        bottom: 0;
+        z-index: 14;
+        background-color: dodgerblue;
+        right: 100%;
+        transition: 0.7s ease all;
+    }
+    header nav .nav-icon li{
+        border-bottom: 1px solid white;
+    }
+    header nav label{
+        display: block;
+        position: absolute;
+        z-index: 15;
+        right: 10px;
+        top: 10px;
+        font-size: 30px;
+        color: white;
+    }
+    nav .nav-icon li a{
+        font-size: 15px;
+    }
+    header nav :checked~.nav-icon{
+        right: 0;
+        background-color: dodgerblue;
+    }
+    section .latest-news{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .news-box{
+        width: 90%;
+        justify-content: space-around;
+    }
+    .shop{
+        margin-top: 15px;
+    }
+    .fixtures{
+        padding: 10px;
+        gap: 5px;
+        height: auto;
+        justify-content: space-around;
+    }
+    .match-box{
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .result-box h1{
+        font-size: 13px;   
+    }
+    .home-club1 img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .home-club2 img{
+        width:120px;
+        height: 100px;
+    }
+    .away-club1 img{
+        width:120px;
+        height: 100px;
+    }
+    .away-club2 img{
+        width: 80px;
+        height: 80px;
+    }
+    .result span{
+        font-size:40px;
+    }
+    footer{
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+    }
+    footer .follow-box{
+        width: 80%;
+        height: 100px;
+    }
+    footer .sponsor-box{
+        width: 80%;
+        height: 100px;
+    }
+    footer .end-box{
+        width: 80%;
+        height: 100px;
+        justify-content:space-around;
+        padding: 5px;
+    }
+    footer .end-box .location-box{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+    footer .end-box .location-box iframe{
+        width: 80%;
+        height: 65px;
+    }
+}
+
+@media only screen and (max-width:530px){
+    .shop{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .shop .shop-textbox{
+        width: 50%;
+        height: 70px;
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid white;
+    }
+    .shop .home-shirt{
+        width: 90%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid white;
+    }
+    .shop .away-shirt{
+        width: 90%;
+        height: auto;
+    }
+    .fixture-textbox{
+        width: 100%;
+        height: 30px;
+    }
+    .fixture-textbox h1{
+        font-size: 25px;
+    }
+    .result span{
+        font-size:30px;
+    }
+    .result-box h1{
+        font-size: 10px;   
+    }
+    footer h2{
+        font-size: 18px;
+    }
+    .social-box2 i{
+        font-size: 20px;
+    }
+    .sponsor-box img{
+        width: 70px;
+        height: 30px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:390px){
+    .head-box{
+        margin-top: -10px;
+    }
+    .social-box{
+        width: 30%;
+        height: 30px;
+        text-align: center;
+    }
+    .social-box i{
+        font-size: 12px;
+    }
+    .search-box i{
+        margin-right: 20px;
+    }
+    .logo-box{
+        height: 130px;
+    }
+    
+    .logo-box span{
+        font-size: 16px;
+    }
+    .logo-box img{
+        width: 80px;
+        height: 80px;
+    }
+    .latest-news{
+        margin-top: -50px;
+    }
+    .shop{
+        margin-top: 10px;
+    }
+    .shop-textbox h2{
+        font-size: 15px;
+    }
+    .shop h4{
+        font-size: 13px;
+    }
+    .shop img{
+        height: 200px;
+    }
+    nav label{
+        margin-top: -10px;
+    }
+    nav i{
+        font-size: 20px;
+    }
+    
+    .fixture-textbox h1{
+        font-size: 15px;
+    }
+    .match-textbox h4{
+        font-size: 12px;
+    }
+    .result-box{
+        height: auto;
+    }
+    .result-box img{
+        width: 60px;
+        height: 60px;
+    }
+    .result span{
+        font-size: 20px;
+    }
+    .result-box h1{
+        font-size: 8px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+    }
+    .follow-box{
+        width: 90%;
+        height: 80px;
+    }
+    .sponsor-box{
+        width: 90%;
+        height: 80px;
+    }
+}
